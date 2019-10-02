@@ -10,15 +10,16 @@ npm i extract-zip-promise
 
 ## Usage
 
-```js
-const extractZip = require("extract-zip-promise")(
-  (async () => {
-    try {
-      await extractZip(archivePath, { dir: "destination/path" })
-    } catch (e) {
-      //error extracting zip file
-    }
-  })()
+```ts
+const extractZip = require("extract-zip-promise")
+  //
+;(async () => {
+  try {
+    await extractZip(archivePath, { dir: "destination/path" })
+  } catch (e) {
+    //error extracting zip file
+  }
+})()
 ```
 
 Function signature is the same as [extract-zip](https://www.npmjs.com/package/extract-zip) module.
