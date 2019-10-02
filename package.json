@@ -4,6 +4,9 @@
   "description": "Wrapper arount extract-zip enabling promise interface.",
   "main": "index.js",
   "types": "index.d.ts",
+  "files": [
+    "index.d.ts"
+  ],
   "scripts": {
     "test": "jest"
   },
