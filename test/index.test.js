@@ -1,26 +1,20 @@
 const extractZip = require("../index")
-const fs = require("fs")
-const tmp = require("tmp")
-const path = require("path")
+const extract = require("extract-zip")
 
-let tmpDir, archivePath
-describe("extract-zip-promise", () => {
-  test("unzip successfully", () => {
-    tmpDir = tmp.dirSync()
-    archivePath = path.join(tmpDir.name, "test.zip")
-    destination = path.join(tmpDir.name, "destination")
-    fs.mkdirSync(destination)
-    const copySource = path.resolve(__dirname, "_fixtures_/test.zip")
-    const copyDest = path.join(tmpDir.name, "test.zip")
-    fs.copyFileSync(copySource, copyDest)
+const options = { dir: "/test/test" }
+const archivePath = "/path/to/file.zip"
 
-    return extractZip(archivePath, { dir: destination })
+describe("extract zip promise", () => {
+  test("if extraction is a success, resolve the promise", async () => {
+    await extractZip(archivePath, options)
+    expect(extract.mock.calls[0][0]).toBe(archivePath)
+    expect(extract.mock.calls[0][1]).toBe(options)
   })
-  test("reject when there is an error in unzip process", () => {
-    expect.assertions(1)
-
-    return extractZip(archivePath, { dir: "does/not/exist" }).catch(error => {
-      expect(error).toBeInstanceOf(Error)
+  test("if extraction is a failure, reject the promise", async () => {
+    await extractZip(archivePath, options).catch(e => {
+      expect(e).toBeInstanceOf(Error)
     })
+    expect(extract.mock.calls[1][0]).toBe(archivePath)
+    expect(extract.mock.calls[1][1]).toBe(options)
   })
 })
