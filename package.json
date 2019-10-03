@@ -1,6 +1,6 @@
 {
   "name": "extract-zip-promise",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Wrapper arount extract-zip enabling promise interface.",
   "main": "index.js",
   "types": "index.d.ts",
