@@ -1,6 +1,6 @@
 # Extract Zip Promise
 
-Simple wrapper around [extract-zip](https://www.npmjs.com/package/extract-zip) module, enabling promise inteface.
+Simple wrapper around [extract-zip](https://www.npmjs.com/package/extract-zip) module, enabling promise interface.
 
 ![CircleCI](https://img.shields.io/circleci/build/github/ivandotv/extract-zip-promise/master)
 ![GitHub](https://img.shields.io/github/license/ivandotv/extract-zip-promise)
