@@ -1,7 +1,10 @@
 # Extract Zip Promise
 
 Simple wrapper around [extract-zip](https://www.npmjs.com/package/extract-zip) module, enabling promise inteface.
-//todo -stickers
+
+![CircleCI](https://img.shields.io/circleci/build/github/ivandotv/extract-zip-promise/master)
+![GitHub](https://img.shields.io/github/license/ivandotv/extract-zip-promise)
+![dependabot enabled](https://flat.badgen.net/dependabot/dependabot/dependabot-core/?icon=dependabot)
 
 ## Installation
 
