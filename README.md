@@ -1,6 +1,7 @@
 # Extract Zip Promise
 
 Simple wrapper around [extract-zip](https://www.npmjs.com/package/extract-zip) module, enabling promise inteface.
+//todo -stickers
 
 ## Installation
 
