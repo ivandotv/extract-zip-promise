@@ -29,6 +29,11 @@
     "yauzl",
     "extract-zip"
   ],
+  "jest": {
+    "setupFiles": [
+      "./test/_fixtures_/setup.js"
+    ]
+  },
   "author": "Ivan Vlatkovic",
   "license": "MIT",
   "dependencies": {
@@ -36,7 +41,6 @@
     "extract-zip": "^1.6.7"
   },
   "devDependencies": {
-    "jest": "^24.9.0",
-    "tmp": "^0.1.0"
+    "jest": "^24.9.0"
   }
 }
