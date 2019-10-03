@@ -17,13 +17,7 @@ jobs:
       - image: circleci/node:12
     steps:
       - test
-      - store-artifacts
-      - setup-coverage
 commands:
-  store-artifacts:
-    steps:
-      - store_artifacts:
-          path: coverage
   test:
     steps:
       - checkout
@@ -43,10 +37,6 @@ commands:
             npm run ci:test
       - store_test_results:
           path: reports/junit/
-  setup-coverage:
-    steps:
-      - codecov/upload:
-          file: coverage/coverage-final.json
 workflows:
   version: 2
   build_and_test:
