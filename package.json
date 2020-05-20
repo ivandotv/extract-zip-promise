@@ -39,7 +39,7 @@
   "license": "MIT",
   "dependencies": {
     "@types/extract-zip": "^1.6.2",
-    "extract-zip": "^1.6.7"
+    "extract-zip": "^2.0.0"
   },
   "devDependencies": {
     "jest": "^26.0.0"
