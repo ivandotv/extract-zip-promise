@@ -1,3 +1,6 @@
+# Archived
+Version `2.0.0` of the [extract-zip](https://www.npmjs.com/package/extract-zip) package supports promise style api, so this package has become obsolete.
+
 # Extract Zip Promise
 
 Simple wrapper around [extract-zip](https://www.npmjs.com/package/extract-zip) module, enabling promise interface.
